@@ -1,0 +1,15 @@
+button {
+  background : none;
+  border : none;
+  margin-bottom: 50px;
+  
+}
+
+.containerBtn {
+    display: flex;
+    gap: 280px;
+    position: absolute;
+    left: 30%;
+    bottom: -2%;
+}
+

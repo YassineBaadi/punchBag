@@ -1,0 +1,53 @@
+.bar-container {
+  width: 500px;        
+  height: 50px;
+  border-radius: 20px;
+  border: 5px solid black;
+  background-color: darkred; 
+  overflow: hidden;
+  margin-left: 65%;
+}
+
+.bar {
+  background-color: green;
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 15px 0 0 15px; 
+}
+
+.name {
+    margin-bottom: -20px;
+    color: whitesmoke;
+    margin-left: 85%;
+}
+
+.bar-container2 {
+  margin-top: -3.2%;
+  width: 500px;        
+  height: 50px;
+  border-radius: 20px;
+  border: 5px solid black;
+  background-color: darkred; 
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.bar2 {
+  background-color: green;
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 15px 0 0 15px; 
+}
+
+.name2 {
+    position: absolute;
+    top: -0.3%;
+    color: whitesmoke;
+    margin-left: 5%;
+    padding: 0; 
+}
+
+
+
+
+

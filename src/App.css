@@ -1,0 +1,64 @@
+.intro {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.round-img,
+.fight-img {
+  position: absolute;
+  width: 400px;
+  opacity: 0;
+}
+
+/* ROUND 1 s’affiche de 0 à 1.5s */
+.round-img {
+  animation: showRound 3s ease-out forwards;
+}
+
+@keyframes showRound {
+  0% { opacity: 0; transform: scale(0.5); }
+  10% { opacity: 1; transform: scale(1.1); }
+  30% { opacity: 1; transform: scale(1); }
+  49% { opacity: 0; transform: scale(1); }
+  100% { opacity: 0; }
+}
+
+/* FIGHT s’affiche après 1.5s, pendant 1.5s */
+.fight-img {
+  animation: showFight 3s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes showFight {
+  0% { opacity: 0; transform: scale(0.5); }
+  10% { opacity: 1; transform: scale(1.1); }
+  30% { opacity: 1; transform: scale(1); }
+  49% { opacity: 0; transform: scale(1); }
+  100% { opacity: 0; }
+}
+
+
+.start-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.start-btn {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+}
