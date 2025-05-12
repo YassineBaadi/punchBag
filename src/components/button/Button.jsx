@@ -13,7 +13,7 @@ export default function Bouton({ onClick, showReset, onReset }) {
 
     <div className="containerBtn">
       <button onClick={onClick}>
-        <img src={punchBtn} alt="punch" width={300} height={130} />
+        <img src={punchBtn} alt="punch" width={150} height={130} />
       </button>
 
       {showReset && (

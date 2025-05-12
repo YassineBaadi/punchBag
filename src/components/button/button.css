@@ -2,14 +2,22 @@ button {
   background : none;
   border : none;
   margin-bottom: 50px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
   
 }
 
 .containerBtn {
     display: flex;
-    gap: 280px;
+    gap: 240px;
     position: absolute;
     left: 30%;
     bottom: -2%;
+    
 }
 
+
+button:hover{
+  transform: scale(1.05);
+}

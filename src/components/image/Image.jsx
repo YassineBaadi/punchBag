@@ -7,6 +7,7 @@ import scorpion from '../../assets/scorpioon.gif';
 import scorpionAttack from '../../assets/attackScorpion.png';
 import fireball from '../../assets/energyBall.png';
 import subZeroStun from '../../assets/subStun.gif';
+import scorpionWin from '../../assets/scorpion-win.gif'
 
 
 export default function Image({ isDead, shake, lowHp, scorpionAttacks, fireballVisible  }) {
@@ -14,7 +15,19 @@ export default function Image({ isDead, shake, lowHp, scorpionAttacks, fireballV
     <div className="fighters">
   
       <div className="scorpion-side">
-        <img src={scorpionAttacks ? scorpionAttack : scorpion} alt="Scorpion" className='scorpion' />
+        <img
+          src={
+            isDead
+              ? scorpionWin
+              : scorpionAttacks
+              ? scorpionAttack
+              : scorpion
+          }
+          alt="Scorpion"
+          className={`scorpion ${isDead ? 'scorpion-win-big' : ''}`}
+        />
+
+
       </div>
 
       <div className="subzero-side flipped">

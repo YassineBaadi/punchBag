@@ -27,7 +27,8 @@ const startGame = () => {
 
   setTimeout(() => {
   audio.play()
-  audio.volume = 0.5
+  audio.volume = 0.1
+  audio.loop = true
   audio.currentTime = 23
 }, "2800");
 
